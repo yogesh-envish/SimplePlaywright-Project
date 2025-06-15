@@ -112,6 +112,8 @@ test.describe('Demo Shop Application', () => {
       await emaillink.isVisible()
       await expect(emaillink).toHaveText(emailinput);
 
+      //Selecting Electronics tab and Clicking on Cell Phones
+
     } else {
       const registertitle = page.locator("xpath=//div//h1[text()='Register']");
       await expect(registertitle).toHaveText("Register");
